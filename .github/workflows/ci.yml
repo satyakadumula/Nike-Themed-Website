@@ -25,5 +25,5 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to server
-        run: ./deploy.sh
+      # - name: Deploy to server
+      #   run: ./deploy.sh
