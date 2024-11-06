@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+.navbar {
+  /* border: 2px solid red; */
+  height: 9.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(221, 217, 217);
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 5px 8px 6px 1px rgb(0, 0, 0);
+  position: fixed;
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+  /* border-radius: 10px; */
+  /* mix-blend-mode: multiply; */
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-weight: 800;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: normal;
+  font-size: larger;
+}
+
+.header_elements {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  transition: 0.3s;
+  outline: 2px solid transparent;
+}
+
+li a:hover,
+.activeBtn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(190, 0, 0);
+}
+
+li a:active {
+  cursor: pointer;
+  border-radius: 5px;
+  /* outline: 2px solid white; */
+  background-color: white;
+  padding: 5px;
+}
+.loginbtn {
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  margin-top: 0px;
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.loginbtn:active {
+  color: black;
+}
+.Login-Signup {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+}
