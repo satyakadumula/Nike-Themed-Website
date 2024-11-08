@@ -44,7 +44,7 @@ p,
   padding-right: 17rem;
   margin: 1.2rem auto;
   color: black(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
+  border: none;
   border-radius: 0.5rem;
   padding: 10px;
 }
@@ -52,9 +52,11 @@ p,
   transition: 0.3s;
   box-shadow: 0.3rem 0.3rem 2rem rgb(0, 0, 0);
   color: white;
+  backdrop-filter: blur(2.5px);
 }
 .specialPara:hover {
   color: white;
+  outline: 2px solid white;
   box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0);
   /* background-color: rgb(190, 0, 0); */
 }

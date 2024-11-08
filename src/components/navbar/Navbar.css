@@ -4,7 +4,7 @@
   height: 9.5vh;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   background-color: rgb(221, 217, 217);
@@ -73,4 +73,21 @@ li a:active {
   width: 210px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 715px) and (max-width: 1000px) {
+  .header_elements {
+    font-size: 16px;
+  }
+  .navbarBtn {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+  }
+  .loginbtn {
+    font-size: 16px;
+  }
+  .Login-Signup {
+    justify-content: space-evenly;
+  }
 }

@@ -28,10 +28,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="Login-Signup">
-        <button type='button'>
+        <button type='button' className='navbarBtn'>
           <Link to='/login' className="loginbtn">Login</Link>
         </button>
-        <button type='button'>
+        <button type='button' className='navbarBtn'>
           <Link to='/signup' className="loginbtn">SignUp</Link>
         </button>
       </div>
