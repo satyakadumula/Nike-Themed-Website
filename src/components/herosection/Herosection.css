@@ -28,6 +28,18 @@ p,
 .specialPara {
   cursor: default;
 }
+.specialPara {
+  transition: 0.3s;
+  box-shadow: 0.3rem 0.3rem 2rem rgb(0, 0, 0);
+  color: white;
+  backdrop-filter: blur(2.5px);
+}
+.specialPara:hover {
+  color: white;
+  outline: 2px solid white;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0);
+  /* background-color: rgb(190, 0, 0); */
+}
 .rightSection {
   margin-left: 4rem;
   margin-top: 3rem;
@@ -47,18 +59,6 @@ p,
   border: none;
   border-radius: 0.5rem;
   padding: 10px;
-}
-.specialPara {
-  transition: 0.3s;
-  box-shadow: 0.3rem 0.3rem 2rem rgb(0, 0, 0);
-  color: white;
-  backdrop-filter: blur(2.5px);
-}
-.specialPara:hover {
-  color: white;
-  outline: 2px solid white;
-  box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0);
-  /* background-color: rgb(190, 0, 0); */
 }
 .changebtn {
   margin-left: 10px;
