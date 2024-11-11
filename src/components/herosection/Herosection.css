@@ -109,3 +109,56 @@ button:active {
 button:hover {
   box-shadow: 3px 1px 7px 0.5px black;
 }
+
+@media (max-width: 380px) {
+  .herosection {
+    flex-direction: column;
+    border: 2px solid white;
+    width: 100%;
+  }
+  .specialPara {
+    z-index: -1;
+  }
+  .leftSection {
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftSection h1 {
+    border: 2px solid white;
+    font-size: 55px;
+  }
+
+  .top-info {
+    order: 1;
+  }
+
+  .bottom-info {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+  }
+  .shopncategory {
+    margin: 10px auto;
+  }
+  .available p {
+    margin-top: 0;
+  }
+
+  .rightSection {
+    border: 2px solid white;
+    order: 2;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+  }
+  .rightSection img {
+    width: 100%;
+  }
+}
