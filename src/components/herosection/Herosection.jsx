@@ -27,8 +27,14 @@ const Herosection = () => {
                     </div>
                     <div className="available">
                         <p style={{fontWeight:'bold',fontSize:'15px'}}>Also available on</p><br />
-                        <a href="https://www.amazon.in/s?k=Nike+shoes&crid=1NKPGMIONJM7D&sprefix=nike+shoe%2Caps%2C234&ref=nb_sb_noss_1"><img src={amazonImg} alt="amazon"  className='amazonlogo' /></a>
-                        <a href="https://www.flipkart.com/search?q=Nike%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src={flipkartImg} alt="flipkart" className='flipkartlogo'/></a>
+                        <div className="ama-kart">
+                            <div className="ama">
+                                <a href="https://www.amazon.in/s?k=Nike+shoes&crid=1NKPGMIONJM7D&sprefix=nike+shoe%2Caps%2C234&ref=nb_sb_noss_1"><img src={amazonImg} alt="amazon"  className='amazonlogo' /></a>
+                            </div>
+                            <div className="kart">
+                                <a href="https://www.flipkart.com/search?q=Nike%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src={flipkartImg} alt="flipkart" className='flipkartlogo'/></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
