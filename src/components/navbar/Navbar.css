@@ -91,3 +91,97 @@ li a:active {
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 440px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: -770px;
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 18px 5px black;
+    background-color: #333;
+  }
+  .menu ul.active {
+    left: 0;
+    padding: 0;
+    right: 0;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(222, 229, 235);
+  }
+  .menu li {
+    margin: 15px 0;
+  }
+  #nav-icon {
+    display: block;
+    /* border: 3px solid green; */
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    height: 6px;
+    width: 80%;
+    background: rgb(190, 0, 0);
+    border-radius: 9px;
+    opacity: 1;
+    left: 5px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  #nav-icon span:nth-child(1) {
+    top: 3px;
+  }
+  #nav-icon span:nth-child(2),
+  #nav-icon span:nth-child(3) {
+    top: 18px;
+  }
+  #nav-icon span:nth-child(4) {
+    top: 33px;
+  }
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  #nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+}

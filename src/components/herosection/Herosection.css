@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
 .leftSection {
   width: 50%;
   margin-top: 0rem;
@@ -33,6 +36,7 @@ p,
   box-shadow: 0.3rem 0.3rem 2rem rgb(0, 0, 0);
   color: white;
   backdrop-filter: blur(2.5px);
+  font-family: "Geist Mono", monospace;
 }
 .specialPara:hover {
   color: white;
@@ -44,6 +48,7 @@ p,
   margin-left: 4rem;
   margin-top: 3rem;
   width: 50%;
+  z-index: -1;
   /* border: 10px solid white; */
   /* box-shadow: 2rem 2rem 2rem black; */
 }
@@ -81,6 +86,7 @@ p,
   border: none;
   margin-bottom: -10px;
   color: white;
+  font-family: "Geist Mono", monospace;
 }
 .amazonlogo {
   width: 65px;
@@ -92,9 +98,11 @@ button {
   all: unset;
   /* margin-top: -10px; */
   background: rgb(190, 0, 0);
+  font-family: "Luckiest Guy", serif;
   color: white;
   padding: 10px 18px;
   border-radius: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 700;
@@ -110,7 +118,7 @@ button:hover {
   box-shadow: 3px 1px 7px 0.5px black;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
   .herosection {
     flex-direction: column;
     border: 2px solid white;
@@ -119,10 +127,23 @@ button:hover {
   .specialPara {
     z-index: -1;
   }
+  .rightSection {
+    border: 2px solid white;
+    order: 1;
+    z-index: -1;
+    padding: 0;
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 90%;
+  }
+  .rightSection img {
+    width: 100%;
+  }
   .leftSection {
     margin: 1rem auto;
     width: 90%;
     display: flex;
+    order: 2;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -130,10 +151,7 @@ button:hover {
   .leftSection h1 {
     border: 2px solid white;
     font-size: 55px;
-  }
-
-  .top-info {
-    order: 1;
+    margin: 20px auto;
   }
 
   .bottom-info {
@@ -148,17 +166,5 @@ button:hover {
   }
   .available p {
     margin-top: 0;
-  }
-
-  .rightSection {
-    border: 2px solid white;
-    order: 2;
-    z-index: -1;
-    padding: 0;
-    margin: 0;
-    width: 90%;
-  }
-  .rightSection img {
-    width: 100%;
   }
 }
