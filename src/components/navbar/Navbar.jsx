@@ -19,7 +19,7 @@ const Navbar = () => {
     }else{
       ul.classList.remove('active');
     }
-  })
+  },[menuOpen])
   
   return (
     <nav>
@@ -29,8 +29,8 @@ const Navbar = () => {
         </div>
         <div className={`menu ${menuOpen ? 'active' : ''}`}>
           <ul>
-            <li>
-              <NavLink className='header_elements activeBtn' to='/'>Home</NavLink>
+            <li className='first'>
+              <NavLink className='header_elements activeBtn ' to='/'>Home</NavLink>
             </li>
             <li>
               <NavLink className='header_elements' to='/about'>About</NavLink>
@@ -38,8 +38,8 @@ const Navbar = () => {
             <li>
               <NavLink className='header_elements' to='/contact'>Contact</NavLink>
             </li>
-            <li>
-              <NavLink className='header_elements' to='/services'>Services</NavLink>
+            <li className='last'>
+              <NavLink className='header_elements ' to='/services'>Services</NavLink>
             </li>
           </ul>
         </div>
