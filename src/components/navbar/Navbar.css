@@ -38,7 +38,6 @@ ul {
   transition: 0.3s;
   outline: 2px solid transparent;
 }
-
 li a:hover {
   cursor: pointer;
   border-radius: 5px;
@@ -46,13 +45,18 @@ li a:hover {
   color: rgb(190, 0, 0);
 }
 
-li a:active {
+.header_elements.active {
+  color: rgb(190, 0, 0);
+}
+
+/* li a:active {
   cursor: pointer;
   border-radius: 5px;
-  /* outline: 2px solid white; */
-  /* background-color: white; */
+  outline: 2px solid white;
+  background-color: white;
   padding: 5px;
-}
+} */
+
 .loginbtn {
   letter-spacing: 1px;
   text-decoration: none;
@@ -99,12 +103,13 @@ li a:active {
     height: 55px;
   }
   .menu ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
     position: absolute;
     top: 40px;
+    gap: 10px;
     left: -770px;
     transition: all 0.5s ease;
     box-shadow: 2px 2px 18px 5px black;
@@ -114,7 +119,7 @@ li a:active {
     left: 0;
     padding: 0;
     right: 0;
-    display: flex;
+    /* display: flex; */
     gap: 10px;
     justify-content: center;
     align-items: center;

@@ -15,7 +15,9 @@ const Navbar = () => {
     const ul = document.querySelector('.menu ul');
     if(menuOpen){
       ul.classList.add('active');
-      ul.style.display = 'flex';
+      setTimeout(()=>{
+        ul.style.display = "flex";
+      },50);
     }else{
       ul.classList.remove('active');
     }
@@ -30,7 +32,7 @@ const Navbar = () => {
         <div className={`menu ${menuOpen ? 'active' : ''}`}>
           <ul>
             <li className='first'>
-              <NavLink className='header_elements activeBtn ' to='/'>Home</NavLink>
+              <NavLink className='header_elements' to='/'>Home</NavLink>
             </li>
             <li>
               <NavLink className='header_elements' to='/about'>About</NavLink>
