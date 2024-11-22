@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
 .leftSection {
   width: 50%;
   margin-top: 0rem;
@@ -28,10 +31,24 @@ p,
 .specialPara {
   cursor: default;
 }
+.specialPara {
+  transition: 0.3s;
+  box-shadow: 0.3rem 0.3rem 2rem rgb(0, 0, 0);
+  color: white;
+  backdrop-filter: blur(2.5px);
+  font-family: "Geist Mono", monospace;
+}
+.specialPara:hover {
+  color: white;
+  outline: 2px solid white;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0);
+  /* background-color: rgb(190, 0, 0); */
+}
 .rightSection {
   margin-left: 4rem;
   margin-top: 3rem;
   width: 50%;
+  z-index: -1;
   /* border: 10px solid white; */
   /* box-shadow: 2rem 2rem 2rem black; */
 }
@@ -44,19 +61,9 @@ p,
   padding-right: 17rem;
   margin: 1.2rem auto;
   color: black(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
+  border: none;
   border-radius: 0.5rem;
   padding: 10px;
-}
-.specialPara {
-  transition: 0.3s;
-  box-shadow: 0.3rem 0.3rem 2rem rgb(0, 0, 0);
-  color: white;
-}
-.specialPara:hover {
-  color: white;
-  box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0);
-  /* background-color: rgb(190, 0, 0); */
 }
 .changebtn {
   margin-left: 10px;
@@ -70,18 +77,38 @@ p,
   color: white;
 }
 .shopncategory {
-  margin: 30px 0px;
+  margin: 25px 0px;
 }
 .available {
   font-size: small;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 .available p {
   border: none;
+  margin: 0 auto;
   margin-bottom: -10px;
   color: white;
+  font-family: "Geist Mono", monospace;
+}
+.ama-kart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ama {
+  width: 35px;
+  height: 30px;
+  padding: 0;
+  /* border: 2px solid green; */
+  border-radius: 5px;
+  background-color: aliceblue;
 }
 .amazonlogo {
-  width: 65px;
+  padding-top: 2px;
+  width: 100%;
+  height: 80%;
 }
 .flipkartlogo {
   width: 40px;
@@ -90,9 +117,11 @@ button {
   all: unset;
   /* margin-top: -10px; */
   background: rgb(190, 0, 0);
+  font-family: "Luckiest Guy", serif;
   color: white;
   padding: 10px 18px;
   border-radius: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 700;
@@ -106,4 +135,57 @@ button:active {
 
 button:hover {
   box-shadow: 3px 1px 7px 0.5px black;
+}
+
+@media (max-width: 440px) {
+  .herosection {
+    flex-direction: column;
+    /* border: 2px solid white; */
+    width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  .specialPara {
+    z-index: -1;
+  }
+  .rightSection {
+    /* border: 2px solid white; */
+    order: 1;
+    z-index: -1;
+    padding: 0;
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 90%;
+  }
+  .rightSection img {
+    width: 100%;
+    transform: scale(1.1);
+  }
+  .leftSection {
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftSection h1 {
+    /* border: 2px solid white; */
+    font-size: 55px;
+    margin: 20px auto;
+  }
+
+  .bottom-info {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+  }
+  .shopncategory {
+    margin: 10px auto;
+  }
+  .available p {
+    margin-top: 0;
+  }
 }

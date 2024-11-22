@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.main {
+  /* border: 4px solid violet; */
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.nike-logo {
+  margin-top: 3rem;
+  width: 300px;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 5px 15px 20px 1px;
+}
+.right-section {
+  width: auto;
+}
+.signup-para {
+  /* border: 4px solid yellow; */
+  color: aliceblue;
+  padding-left: 80px;
+  width: 600px;
+  font-size: larger;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  text-shadow: 0.3rem 0.6rem 0.8rem black;
+}
+.signup-details {
+  /* border: 4px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-shadow: 0.3rem 0.6rem 0.8rem rgb(52, 51, 51);
+}
+
+.signup-details p {
+  font-size: "15px";
+  font-family: "monaco";
+  margin: 0;
+}
+.signup-details input {
+  width: 350px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px 0.5px;
+}
+.login-signup-button {
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 1px;
+  box-shadow: 5px 3px 10px 0.5px black;
+  text-shadow: none;
+}
+.click-here a:active {
+  color: rgb(192, 2, 2);
+}

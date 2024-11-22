@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.serves {
+  /* border: 1px solid red; */
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(15, 159, 198);
+}
+
+.serves img {
+  width: 300px;
+  height: 500px;
+  margin-top: 100px;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.3rem 2rem black;
+  /* position:sticky; */
+}
+
+.serves h2 {
+  font-size: xx-large;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+  text-shadow: 0.3rem 0.4rem 0.5rem black;
+}
+.serves p {
+  font-size: large;
+  color: black;
+  /* color: rgb(164, 29, 29); */
+  background-color: white;
+  padding: 10px;
+  margin-bottom: -5px;
+  border-radius: 10px;
+  /* text-shadow: 0.3rem 0.6rem 0.6rem rgb(52, 51, 51); */
+}
+
+.services-down {
+  margin-top: 3rem;
+}

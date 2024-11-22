@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.login-main {
+  /* border: 2px solid yellow; */
+  margin: 20px auto;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nike-sacrifice {
+  width: 700px;
+  /* font-size: larger; */
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  /* border: 2px solid white; */
+  /* margin-top: 10rem; */
+  text-shadow: 0.3rem 0.6rem 0.8rem black;
+}
+.your-limit-is-you {
+  width: 350px;
+  height: 550px;
+  /* position: fixed; */
+  top: 125px;
+  right: 200px;
+  border-radius: 20px;
+  box-shadow: 3px 5px 10px 0px;
+}
+.login-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* margin-top: 40px; */
+  margin-left: 40px;
+  align-items: center;
+  margin-right: 280px;
+  letter-spacing: 0px;
+}
+.login-details input {
+  width: 350px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 10px 0.5px black;
+}
+
+.login-details p {
+  margin: 0;
+  color: aliceblue;
+}
+
+.login-signup-button {
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 5px 3px 10px 0.5px black;
+  text-shadow: none;
+}
+
+span {
+  color: orange;
+}
